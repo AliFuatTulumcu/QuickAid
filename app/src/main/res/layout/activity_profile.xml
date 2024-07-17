@@ -1,0 +1,207 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- User Information Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Information"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: John Doe"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvUserSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surname: Doe"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvUserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: +123456789"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: johndoe@example.com"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvUserAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: 123 Main St, Anytown"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <!-- Edit Information Button for User Information -->
+        <Button
+            android:id="@+id/btnEditUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Information"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+
+        <!-- Health Information Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Information"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:padding="8dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvBloodType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Type: O+"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvMedications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medications: None"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvAllergies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergies: None"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvChronicConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chronic Conditions: None"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvEmergencyInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Instructions: None"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvPhysicianContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physician Contact: None"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvMedicalHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical History: None"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvVaccinationStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccination Status: Up-to-date"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tvInsuranceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insurance Info: None"
+            android:textSize="18sp"
+            android:padding="4dp" />
+
+        <!-- Edit Information Button for Health Information -->
+        <Button
+            android:id="@+id/btnEditHealthInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Health Information"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+
+        <!-- Emergency Contacts Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:padding="8dp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/llEmergencyContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+
+        <!-- Manage Contacts Button -->
+        <!-- Emergency Contact Management Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnAddContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnEditContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnDeleteContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
